@@ -114,7 +114,7 @@ end)
 
 general:Button("Picklock",function()
 	for i,v in pairs(game.Workspace.CurrentRooms:GetDescendants()) do -- grabs everything from workspace
-		if v.Parent.Name == 'Picklock' then -- checks if it has a handle and if its a touchtransmitter
+		if v.Parent.Name == 'Lockpick' then -- checks if it has a handle and if its a touchtransmitter
 			local BillboardGui = Instance.new('BillboardGui') -- Makes Billboardgui
 			local TextLabel = Instance.new('TextLabel') -- makes text label
 
