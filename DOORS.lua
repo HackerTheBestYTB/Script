@@ -16,15 +16,11 @@ local server2 = gui3:CreateFolder("Server")
 
 local cre = gui3:CreateFolder("Creator")
 
-lp:Toggle("Speed",function(bool)
-	if bool == true then
+lp:Bind("Speed",Enum.KeyCode.Z,function()
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 31
-	else
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 18
-	end
 end)
 
-general:Button("Key",function()
+general:Bind("Key",Enum.KeyCode.X,function()
 	for i,v in pairs(game.Workspace.CurrentRooms:GetDescendants()) do -- grabs everything from workspace
 		if v.Parent.Name == 'KeyObtain' then -- checks if it has a handle and if its a touchtransmitter
 			local BillboardGui = Instance.new('BillboardGui') -- Makes Billboardgui
@@ -46,7 +42,7 @@ general:Button("Key",function()
 	end
 end)
 
-general:Button("Lever",function()
+general:Bind("Lever",Enum.KeyCode.X,function()
 	for i,v in pairs(game.Workspace.CurrentRooms:GetDescendants()) do -- grabs everything from workspace
 		if v.Parent.Name == 'LeverForGate' then -- checks if it has a handle and if its a touchtransmitter
 			local BillboardGui = Instance.new('BillboardGui') -- Makes Billboardgui
@@ -68,6 +64,29 @@ general:Button("Lever",function()
 	end
 end)
 
+general:Bind("Real Door",Enum.KeyCode.F,function() --Default bind
+	for i,v in pairs(game.Workspace:GetDescendants()) do -- grabs everything from workspace
+		if v.ClassName == 'SurfaceGui' and v.Parent.Name == 'Door' then -- checks if it has a handle and if its a touchtransmitter
+			local BillboardGui = Instance.new('BillboardGui') -- Makes Billboardgui
+			local TextLabel = Instance.new('TextLabel') -- makes text label
+
+			BillboardGui.Parent = v.Parent -- what the billboardgui goes into
+			BillboardGui.AlwaysOnTop = true -- if its on top or not
+			BillboardGui.Size = UDim2.new(0, 50, 0, 50) -- size of it
+			BillboardGui.StudsOffset = Vector3.new(0,0,0)
+
+			TextLabel.Parent = BillboardGui -- putting textlabel into billboardgui
+			TextLabel.BackgroundColor3 = Color3.new(1,1,1) -- color
+			TextLabel.BackgroundTransparency = 1 -- transparency
+			TextLabel.Size = UDim2.new(0.5, 0, 0.5, 0) -- size
+			TextLabel.Text = "Real Door" -- what the label says
+			TextLabel.TextColor3 = Color3.new(1, 0, 0) -- color
+			TextLabel.TextScaled = true -- if the text is scaled or not
+		end
+	end
+end)
+
+--[[
 general:Button("Lighter",function()
 	for i,v in pairs(game.Workspace.CurrentRooms:GetDescendants()) do -- grabs everything from workspace
 		if v.Parent.Name == 'Lighter' then -- checks if it has a handle and if its a touchtransmitter
@@ -155,13 +174,14 @@ general:Button("Vitamins",function()
 		end
 	end
 end)
+]]
 
 general:Button("Comming Soon",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/HackerTheBestYTB/ScriptRoblox/test/loaadeer.lua"))()
 end)
 
 r50:Button("Monster",function()
-for i,v in pairs(game.Workspace:GetDescendants()) do -- grabs everything from workspace
+	for i,v in pairs(game.Workspace.CurrentRooms:GetDescendants()) do -- grabs everything from workspace
 	if v.Parent.Name == 'FigureRagdoll' then -- checks if it has a handle and if its a touchtransmitter
 		local BillboardGui = Instance.new('BillboardGui') -- Makes Billboardgui
 		local TextLabel = Instance.new('TextLabel') -- makes text label
@@ -202,6 +222,15 @@ r50:Button("Book", function()
 			TextLabel.TextScaled = true -- if the text is scaled or not
 		end
 	end
+end)
+
+r50:Box("Input CodePad","number",function(value) -- "number" or "string"
+	local args = {
+		[1] = value
+	}
+
+	game:GetService("ReplicatedStorage").Bricks.PL:FireServer(unpack(args))
+
 end)
 
 
