@@ -2,7 +2,6 @@ local doors = 6839171747
 local evade = 9872472334
 local spacesailors = 5000143962
 local michaelszombies = 8054462345
-local combatwarriors = 4282985734
 
 function nitro ()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/HackerTheBestYTB/ScriptRoblox/test/Intro.lua"))()
@@ -20,9 +19,6 @@ elseif game.PlaceId == spacesailors then
 elseif game.PlaceId == michaelszombies then
 	nitro()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/HackerTheBestYTB/Script/test/MichaelsZombies.lua')))()
-elseif game.PlaceId == combatwarriors then
-	nitro()
-	
 else
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/HackerTheBestYTB/ScriptRoblox/test/GameNotSupported"))()
 end
