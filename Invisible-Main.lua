@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/HackerTheBestYTB/ScriptRoblox/test/RemoteSpy.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HackerTheBestYTB/Script/test/IWhiteList.lua"))()
 function loadscript()
 print("Success")
 end
