@@ -17,3 +17,4 @@ else
 	--game.Players.LocalPlayer:Kick("ID sai.")
 	--wait(99999)
 end
+local pro = allow
