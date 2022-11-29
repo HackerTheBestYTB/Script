@@ -5,7 +5,7 @@ wait(2)
 
 if ID == "1" then -- BEF49A83-21F6-4BB5-967E-3A106BB817AC
 	game.StarterGui:SetCore("SendNotification", {Title="TVNHUB"; Text="Thanh Cong!"; Duration=1;})
-elseif ID == "B68963E1-E753-4271-9317-6961DF4E27C11" then
+elseif ID == "B68963E1-E753-4271-9317-6961DF4E27C1" then
 	game.StarterGui:SetCore("SendNotification", {Title="TVNHUB"; Text="Thanh Cong!"; Duration=1;})
 	allow = true
 else	
