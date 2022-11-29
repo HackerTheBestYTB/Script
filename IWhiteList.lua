@@ -15,5 +15,5 @@ else
 	--wait(5)
 	--game.Players.LocalPlayer:Kick("ID sai.")
 	--wait(99999)
-	return
+	pcall(function() getgenv().TVNHUB_LOADED = true end)
 end
