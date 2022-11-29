@@ -17,4 +17,3 @@ else
 	--game.Players.LocalPlayer:Kick("ID sai.")
 	--wait(99999)
 end
-loadstring(game:HttpGet("https://raw.githubusercontent.com/HackerTheBestYTB/Script/test/Invisible-Main.lua"))()
