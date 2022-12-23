@@ -5,7 +5,7 @@ wait(2)
 
 if ID == "1" then -- BEF49A83-21F6-4BB5-967E-3A106BB817AC
 	game.StarterGui:SetCore("SendNotification", {Title="TVNHUB"; Text="Thanh Cong!"; Duration=1;})
-elseif ID == "BB5B50B5-AD3E-4FA4-850E-FADCDE4E78B8" then --Triet2804
+elseif ID == "47754BBE-0449-4482-BEF8-154641307F1F" then --Triet2804
 	game.StarterGui:SetCore("SendNotification", {Title="TVNHUB"; Text="Thanh Cong!"; Duration=1;})
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/HackerTheBestYTB/ScriptRoblox/test/Intro.lua"))()
 elseif ID == "9c303aa0-61a6-4d85-a49d-81107c97d919" then --PTA Mobile
