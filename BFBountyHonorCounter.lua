@@ -1,3 +1,17 @@
+if not game:IsLoaded() then --check game load
+game.Loaded:Wait()
+end
+repeat
+task.wait()
+until game:GetService("Players") and game:GetService("Workspace") and game:GetService("ReplicatedStorage")
+
+if TVNHUB_LOADED == true then
+	print("Loaded")
+	return
+end
+
+pcall(function() getgenv().TVNHUB_LOADED = true end)
+
 local plr = game:GetService("Players").LocalPlayer
 local idk = "idk"
 --..idk..
