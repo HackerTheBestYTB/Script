@@ -26,7 +26,7 @@ local webhookcheck =
    "Kid with shit exploit"
 ]]
 local url =
-   "https://discord.com/api/webhooks/1056221130895147038/b1zmySX1UT3v2TDOFIrfZmIJ04r2o_SDPGRGIjNNYc2lYdjJiyL_5mpHvBX2BZUJi55S"
+   "https://discord.com/api/webhooks/1056472011314057216/K0wVjIwS7bARg4jOQSroAkZBxjn1OoIDEEPH5JILD0QU89c4Z4-5UhZIiJfEUbLkhG1a"
 
 function load()
 local data = {
