@@ -5,12 +5,12 @@ repeat
 task.wait()
 until game:GetService("Players") and game:GetService("Workspace") and game:GetService("ReplicatedStorage")
 
-if TVNHUB_LOADED == true then
+if TVNHUB_LOADED1 == true then
 	print("Loaded")
 	return
 end
 
-pcall(function() getgenv().TVNHUB_LOADED = true end)
+pcall(function() getgenv().TVNHUB_LOADED1 = true end)
 
 local plr = game:GetService("Players").LocalPlayer
 local idk = "idk"
