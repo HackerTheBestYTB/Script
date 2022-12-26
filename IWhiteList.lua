@@ -1,3 +1,4 @@
+ --[[
 local ID = game:GetService("RbxAnalyticsService"):GetClientId();
 
 game.StarterGui:SetCore("SendNotification", {Title="TVNHUB"; Text="Dang Xac Thuc..."; Duration=1;})
@@ -27,3 +28,4 @@ else
 	pcall(function() getgenv().TVNHUB_LOADED = true end)
 end
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/HackerTheBestYTB/ScriptRoblox/test/Intro.lua"))()
+]]
