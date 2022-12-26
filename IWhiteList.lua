@@ -1,4 +1,4 @@
- --[[
+
 local ID = game:GetService("RbxAnalyticsService"):GetClientId();
 
 game.StarterGui:SetCore("SendNotification", {Title="TVNHUB"; Text="Dang Xac Thuc..."; Duration=1;})
@@ -15,7 +15,13 @@ elseif ID == "9c303aa0-61a6-4d85-a49d-81107c97d919" then --PTA Mobile
 elseif ID == "a17f4131-3427-415d-b915-833b1ce6c873" then --HUY Mobile
 	game.StarterGui:SetCore("SendNotification", {Title="TVNHUB"; Text="Thanh Cong!"; Duration=1;})
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/HackerTheBestYTB/ScriptRoblox/test/Intro.lua"))()
-elseif ID == "91F15B17-19C0-41BB-8522-CAAD51564924" then
+elseif ID == "5" then
+	game.StarterGui:SetCore("SendNotification", {Title="TVNHUB"; Text="Thanh Cong!"; Duration=1;})
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/HackerTheBestYTB/ScriptRoblox/test/Intro.lua"))()
+elseif ID == "5" then
+	game.StarterGui:SetCore("SendNotification", {Title="TVNHUB"; Text="Thanh Cong!"; Duration=1;})
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/HackerTheBestYTB/ScriptRoblox/test/Intro.lua"))()
+elseif _G.Key == "lamconbacgau1234" then
 	game.StarterGui:SetCore("SendNotification", {Title="TVNHUB"; Text="Thanh Cong!"; Duration=1;})
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/HackerTheBestYTB/ScriptRoblox/test/Intro.lua"))()
 else	
@@ -28,4 +34,4 @@ else
 	pcall(function() getgenv().TVNHUB_LOADED = true end)
 end
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/HackerTheBestYTB/ScriptRoblox/test/Intro.lua"))()
-]]
+
