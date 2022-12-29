@@ -103,7 +103,6 @@ elseif ID == "5" then
 elseif ID == "5" then
 	game.StarterGui:SetCore("SendNotification", {Title="TVNHUB"; Text="Thanh Cong!"; Duration=1;})
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/HackerTheBestYTB/ScriptRoblox/test/Intro.lua"))()
---[=[
 elseif _G.Key == "Triet2804" then
 	game.StarterGui:SetCore("SendNotification", {Title="TVNHUB"; Text="Thanh Cong!"; Duration=1;})
 	senddata()
@@ -116,8 +115,6 @@ elseif _G.Key == "quancter2k7" then
 	game.StarterGui:SetCore("SendNotification", {Title="TVNHUB"; Text="Thanh Cong!"; Duration=1;})
 	senddata()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/HackerTheBestYTB/ScriptRoblox/test/Intro.lua"))()
-]=]
-
 else	
 	game.StarterGui:SetCore("SendNotification", {Title="TVNHUB"; Text="Ban ko co trong whitelist!"; Duration=1;})
 	game.StarterGui:SetCore("SendNotification", {Title="TVNHUB"; Text="Da copy id, vui long gui admin!"; Duration=1;})
