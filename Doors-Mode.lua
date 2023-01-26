@@ -1,4 +1,3 @@
-local tieude = ""
 local chu = ""
 function ThongBao(chu)
 	firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent,tostring(chu))
